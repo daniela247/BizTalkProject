@@ -6,9 +6,8 @@ namespace BizTalkUseCase3.PropertySchema {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Property)]
-    [Schema(@"https://BizTalkUseCase3.PropertySchema",@"Money")]
     [System.SerializableAttribute()]
-    [SchemaRoots(new string[] {@"Money"})]
+    [SchemaRoots(new string[] {@"cardId", @"money"})]
     public sealed class PropertySchema : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
@@ -22,10 +21,17 @@ namespace BizTalkUseCase3.PropertySchema {
       <b:schemaInfo schema_type=""property"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" />
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name=""Money"" type=""xs:decimal"">
+  <xs:element name=""cardId"" type=""xs:string"">
     <xs:annotation>
       <xs:appinfo>
-        <b:fieldInfo propertyGuid=""8d6bf15f-7c95-4abd-a992-056d73fb1ee2"" />
+        <b:fieldInfo propertyGuid=""0c80b6ff-e45f-4330-b087-2642ec727ca6"" />
+      </xs:appinfo>
+    </xs:annotation>
+  </xs:element>
+  <xs:element name=""money"" type=""xs:decimal"">
+    <xs:annotation>
+      <xs:appinfo>
+        <b:fieldInfo propertyGuid=""e6dbee2a-2411-4421-bcb8-d65e815f90d6"" />
       </xs:appinfo>
     </xs:annotation>
   </xs:element>
@@ -42,8 +48,9 @@ namespace BizTalkUseCase3.PropertySchema {
         
         public override string[] RootNodes {
             get {
-                string[] _RootElements = new string [1];
-                _RootElements[0] = "Money";
+                string[] _RootElements = new string [2];
+                _RootElements[0] = "cardId";
+                _RootElements[1] = "money";
                 return _RootElements;
             }
         }
@@ -62,12 +69,42 @@ namespace BizTalkUseCase3.PropertySchema {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [System.SerializableAttribute()]
-    [PropertyType(@"Money",@"https://BizTalkUseCase3.PropertySchema","decimal","System.Decimal")]
-    [PropertyGuidAttribute(@"8d6bf15f-7c95-4abd-a992-056d73fb1ee2")]
-    public sealed class Money : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+    [PropertyType(@"cardId",@"https://BizTalkUseCase3.PropertySchema","string","System.String")]
+    [PropertyGuidAttribute(@"0c80b6ff-e45f-4330-b087-2642ec727ca6")]
+    public sealed class cardId : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
         
         [System.NonSerializedAttribute()]
-        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"Money", @"https://BizTalkUseCase3.PropertySchema");
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"cardId", @"https://BizTalkUseCase3.PropertySchema");
+        
+        private static string PropertyValueType {
+            get {
+                throw new System.NotSupportedException();
+            }
+        }
+        
+        public override System.Xml.XmlQualifiedName Name {
+            get {
+                return _QName;
+            }
+        }
+        
+        public override System.Type Type {
+            get {
+                return typeof(string);
+            }
+        }
+    }
+    
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.BizTalk.Schema.Compiler", "3.0.1.0")]
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+    [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
+    [System.SerializableAttribute()]
+    [PropertyType(@"money",@"https://BizTalkUseCase3.PropertySchema","decimal","System.Decimal")]
+    [PropertyGuidAttribute(@"e6dbee2a-2411-4421-bcb8-d65e815f90d6")]
+    public sealed class money : Microsoft.XLANGs.BaseTypes.MessageDataPropertyBase {
+        
+        [System.NonSerializedAttribute()]
+        private static System.Xml.XmlQualifiedName _QName = new System.Xml.XmlQualifiedName(@"money", @"https://BizTalkUseCase3.PropertySchema");
         
         private static decimal PropertyValueType {
             get {

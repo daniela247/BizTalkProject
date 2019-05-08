@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="87fae3eb-cf19-4cb0-b1f7-82efff97374a">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="MSSQLService" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="9b861543-d273-403d-a88b-65ed82e0f96a" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IMSSQLService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMSSQLService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ea04b94b-b07e-40fa-a550-14ac0538235e" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddMoneyByUsername&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddMoneyByUsername" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0d0815d2-a86d-4ce7-ade1-cc14c51d4482" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="MSSQLService.IMSSQLService_AddMoneyByUsername_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IMSSQLService_AddMoneyByUsername_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMSSQLService/AddMoneyByUsername&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="b804c73d-53cb-4887-9e7d-019c400c579d" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="MSSQLService.IMSSQLService_AddMoneyByUsername_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IMSSQLService_AddMoneyByUsername_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMSSQLService/AddMoneyByUsernameResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="2aec7982-2ff8-4f8f-bedb-6e1e3518c9a2" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddMoneyByCard&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddMoneyByCard" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="d33d99a9-27ed-40ea-816b-b8d1e2f3325c" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="MSSQLService.IMSSQLService_AddMoneyByCard_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IMSSQLService_AddMoneyByCard_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMSSQLService/AddMoneyByCard&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="fcc04cd7-328e-41ec-ada0-773a3a42c4cc" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="MSSQLService.IMSSQLService_AddMoneyByCard_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IMSSQLService_AddMoneyByCard_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IMSSQLService/AddMoneyByCardResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="9d2b1fb2-54c1-414e-9882-d926dbfc9b3c" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMSSQLService_AddMoneyByUsername_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMSSQLService_AddMoneyByUsername_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="20e5f2f2-582c-4e49-a615-7ee3918e0ab4" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="MSSQLService.MSSQLService_tempuri_org.AddMoneyByUsername" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="87a067a2-3616-4212-bc23-1cd8c9bbc61a" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMSSQLService_AddMoneyByUsername_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMSSQLService_AddMoneyByUsername_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="fa133d6a-2a85-4d00-bbf8-867573d55db4" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="MSSQLService.MSSQLService_tempuri_org.AddMoneyByUsernameResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="10499324-1c39-4f8d-a3de-20879ab00419" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMSSQLService_AddMoneyByCard_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMSSQLService_AddMoneyByCard_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="69701cb4-5e14-4cbd-af77-8f97265aa094" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="MSSQLService.MSSQLService_tempuri_org.AddMoneyByCard" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="229d7067-3eb9-4069-bf46-48e569b80a11" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IMSSQLService_AddMoneyByCard_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IMSSQLService_AddMoneyByCard_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="91f53383-3d27-47bd-ae9c-65eb59d0511e" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="MSSQLService.MSSQLService_tempuri_org.AddMoneyByCardResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="6edc4817-5fb7-4900-a41e-be16ea944e78" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;MSSQLService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="MSSQLServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="99759fba-e50a-4db8-b624-392a648e7ad0" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module MSSQLService
+{
+    internal messagetype IMSSQLService_AddMoneyByUsername_InputMessage
+    {
+        body MSSQLService_tempuri_org.AddMoneyByUsername parameters;
+    };
+    internal messagetype IMSSQLService_AddMoneyByUsername_OutputMessage
+    {
+        body MSSQLService_tempuri_org.AddMoneyByUsernameResponse parameters;
+    };
+    internal messagetype IMSSQLService_AddMoneyByCard_InputMessage
+    {
+        body MSSQLService_tempuri_org.AddMoneyByCard parameters;
+    };
+    internal messagetype IMSSQLService_AddMoneyByCard_OutputMessage
+    {
+        body MSSQLService_tempuri_org.AddMoneyByCardResponse parameters;
+    };
+    internal porttype IMSSQLService
+    {
+        requestresponse AddMoneyByUsername
+        {
+            IMSSQLService_AddMoneyByUsername_InputMessage, IMSSQLService_AddMoneyByUsername_OutputMessage
+        };
+        requestresponse AddMoneyByCard
+        {
+            IMSSQLService_AddMoneyByCard_InputMessage, IMSSQLService_AddMoneyByCard_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service MSSQLServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

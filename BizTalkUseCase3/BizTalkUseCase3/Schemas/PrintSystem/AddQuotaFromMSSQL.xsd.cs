@@ -20,7 +20,7 @@ namespace BizTalkUseCase3.Schemas.PrintSystem {
   <xs:element name=""AddQuotaFromMSSQL"">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name=""UID"" type=""xs:string"" />
+        <xs:element name=""UID"" type=""xs:unsignedInt"" />
         <xs:element name=""Money"" type=""xs:decimal"" />
       </xs:sequence>
     </xs:complexType>

@@ -1,4 +1,4 @@
-namespace BizTalkUseCase3.Schemas {
+namespace BizTalkUseCase3.Schemas.MSSQLSystem {
     using Microsoft.XLANGs.BaseTypes;
     
     
@@ -6,28 +6,28 @@ namespace BizTalkUseCase3.Schemas {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [SchemaType(SchemaTypeEnum.Document)]
-    [Schema(@"http://BizTalkUseCase3.Schemas.BuyCopies",@"BuyCopiesFromPayment")]
+    [Schema(@"http://BizTalkUseCase3.Schemas.MSSQLSystem.BuyCopiesFromPayment",@"BuyCopiesFromPayment")]
     [System.SerializableAttribute()]
     [SchemaRoots(new string[] {@"BuyCopiesFromPayment"})]
-    public sealed class BuyCopies : Microsoft.XLANGs.BaseTypes.SchemaBase {
+    public sealed class BuyCopiesFromPayment : Microsoft.XLANGs.BaseTypes.SchemaBase {
         
         [System.NonSerializedAttribute()]
         private static object _rawSchema;
         
         [System.NonSerializedAttribute()]
         private const string _strSchema = @"<?xml version=""1.0"" encoding=""utf-16""?>
-<xs:schema xmlns=""http://BizTalkUseCase3.Schemas.BuyCopies"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://BizTalkUseCase3.Schemas.BuyCopies"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
+<xs:schema xmlns=""http://BizTalkUseCase3.Schemas.MSSQLSystem.BuyCopiesFromPayment"" xmlns:b=""http://schemas.microsoft.com/BizTalk/2003"" targetNamespace=""http://BizTalkUseCase3.Schemas.MSSQLSystem.BuyCopiesFromPayment"" xmlns:xs=""http://www.w3.org/2001/XMLSchema"">
   <xs:element name=""BuyCopiesFromPayment"">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name=""UID"" type=""xs:unsignedInt"" />
+        <xs:element name=""CardId"" type=""xs:string"" />
         <xs:element name=""Money"" type=""xs:decimal"" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>
 </xs:schema>";
         
-        public BuyCopies() {
+        public BuyCopiesFromPayment() {
         }
         
         public override string XmlContent {

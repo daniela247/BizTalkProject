@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="b9c33a74-f78f-41f1-a26f-0945cebf1773">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="PrintSystem" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="6a89c821-8bac-49c1-bfe9-a60367e94f93" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IPrintSystemService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPrintSystemService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="ebbe2fc8-17a1-407c-9d41-8b6b34336f0c" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddMoney&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddMoney" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="83d6a1c0-0256-430a-ba66-41bb5f70b919" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="PrintSystem.IPrintSystemService_AddMoney_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IPrintSystemService_AddMoney_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPrintSystemService/AddMoney&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="5a50f6b2-34f7-43ed-8ba1-c797b6c823bb" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="PrintSystem.IPrintSystemService_AddMoney_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IPrintSystemService_AddMoney_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPrintSystemService/AddMoneyResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="f5eb0d90-f6b9-4160-9575-f785b26f7354" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;Print&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="Print" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="4aad1a99-c687-4906-88db-354541081860" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="PrintSystem.IPrintSystemService_Print_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IPrintSystemService_Print_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPrintSystemService/Print&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="8d3b7ae0-2b7c-426f-8387-0f1de6b41508" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="PrintSystem.IPrintSystemService_Print_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IPrintSystemService_Print_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPrintSystemService/PrintResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="8c79c72e-b4e5-4e9e-86b9-c740a1296ae9" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPrintSystemService_AddMoney_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPrintSystemService_AddMoney_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="6d0b9f19-93c6-4b29-9090-c9873e28bef4" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PrintSystem.PrintSystemService_tempuri_org.AddMoney" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="74fad3a5-f8e3-4134-a667-6b7c6d9ca93b" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPrintSystemService_AddMoney_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPrintSystemService_AddMoney_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="ddcf86af-74be-4026-8dd0-1dd1cda4ed48" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PrintSystem.PrintSystemService_tempuri_org.AddMoneyResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c4dea8f1-d5f6-4711-8646-ca3c74a24d69" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPrintSystemService_Print_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPrintSystemService_Print_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="c68d5e77-9ace-4083-baeb-2f55add7f513" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PrintSystem.PrintSystemService_tempuri_org.Print" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="48f04afa-39c7-43ac-91a1-c55a98b123cc" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPrintSystemService_Print_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPrintSystemService_Print_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="737d23f9-1162-4086-869b-005975d11919" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PrintSystem.PrintSystemService_tempuri_org.PrintResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="1f8a365d-af85-45f0-acdf-fc11b76c2564" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;PrintSystemService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="PrintSystemServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="2ebc056f-dd46-47c0-abc7-6b12c77db973" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module PrintSystem
+{
+    internal messagetype IPrintSystemService_AddMoney_InputMessage
+    {
+        body PrintSystemService_tempuri_org.AddMoney parameters;
+    };
+    internal messagetype IPrintSystemService_AddMoney_OutputMessage
+    {
+        body PrintSystemService_tempuri_org.AddMoneyResponse parameters;
+    };
+    internal messagetype IPrintSystemService_Print_InputMessage
+    {
+        body PrintSystemService_tempuri_org.Print parameters;
+    };
+    internal messagetype IPrintSystemService_Print_OutputMessage
+    {
+        body PrintSystemService_tempuri_org.PrintResponse parameters;
+    };
+    internal porttype IPrintSystemService
+    {
+        requestresponse AddMoney
+        {
+            IPrintSystemService_AddMoney_InputMessage, IPrintSystemService_AddMoney_OutputMessage
+        };
+        requestresponse Print
+        {
+            IPrintSystemService_Print_InputMessage, IPrintSystemService_Print_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PrintSystemServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

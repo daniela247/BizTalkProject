@@ -1,0 +1,172 @@
+﻿#if __DESIGNER_DATA
+#error Do not define __DESIGNER_DATA.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<om:MetaModel MajorVersion="1" MinorVersion="3" Core="2b131234-7959-458d-834f-2dc0769ce683" ScheduleModel="66366196-361d-448d-976f-cab5e87496d2" xmlns:om="http://schemas.microsoft.com/BizTalk/2003/DesignerData">
+    <om:Element Type="Module" OID="44e0c7a9-3c60-4af4-9c73-50a3a17a87ff">
+        <om:Property Name="ReportToAnalyst" Value="True" />
+        <om:Property Name="Name" Value="PaymentService" />
+        <om:Property Name="Signal" Value="False" />
+        <om:Element Type="PortType" OID="2d02c086-0c9c-4a61-a1b8-a2d0d809c402" ParentLink="Module_PortType">
+            <om:Property Name="Synchronous" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:portType name=&quot;IPaymentService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPaymentService" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="OperationDeclaration" OID="4c6a971d-4e04-4e7f-bd1e-ffc5c5e694eb" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;AddMoney&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="AddMoney" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="1f251f1e-cd57-4980-9639-c95c29e2c074" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="PaymentService.IPaymentService_AddMoney_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IPaymentService_AddMoney_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPaymentService/AddMoney&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="c1c8fda9-b803-48a9-ab62-1bd6799662c6" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="PaymentService.IPaymentService_AddMoney_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IPaymentService_AddMoney_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPaymentService/AddMoneyResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+            <om:Element Type="OperationDeclaration" OID="1199a628-169b-46dd-95a9-001e1677546c" ParentLink="PortType_OperationDeclaration">
+                <om:Property Name="OperationType" Value="RequestResponse" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:operation name=&quot;BuyPhotocopies&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="BuyPhotocopies" />
+                <om:Property Name="Signal" Value="False" />
+                <om:Element Type="MessageRef" OID="0d2b7bbd-5874-4f55-ad69-1c35b08e8aa9" ParentLink="OperationDeclaration_RequestMessageRef">
+                    <om:Property Name="Ref" Value="PaymentService.IPaymentService_BuyPhotocopies_InputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:input message=&quot;http://tempuri.org/:IPaymentService_BuyPhotocopies_InputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPaymentService/BuyPhotocopies&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Request" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+                <om:Element Type="MessageRef" OID="d2587e63-e9cb-4726-8383-1362d78b4ac8" ParentLink="OperationDeclaration_ResponseMessageRef">
+                    <om:Property Name="Ref" Value="PaymentService.IPaymentService_BuyPhotocopies_OutputMessage" />
+                    <om:Property Name="ReportToAnalyst" Value="True" />
+                    <om:Property Name="AnalystComments" Value="&lt;wsdl:output message=&quot;http://tempuri.org/:IPaymentService_BuyPhotocopies_OutputMessage&quot;/&gt;&#xD;&#xA;Action=&quot;http://tempuri.org/IPaymentService/BuyPhotocopiesResponse&quot;&#xD;&#xA;" />
+                    <om:Property Name="Name" Value="Response" />
+                    <om:Property Name="Signal" Value="False" />
+                </om:Element>
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="aa7ae3d8-cc9a-4141-80ae-b50ca32df5cc" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPaymentService_AddMoney_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPaymentService_AddMoney_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="cb1a21c9-1750-409c-8275-6e3728f3c77d" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PaymentService.PaymentService_tempuri_org.AddMoney" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="6c5c7424-97f9-46ae-b3e0-21689d9c8cf1" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPaymentService_AddMoney_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPaymentService_AddMoney_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="51baf35a-1058-4900-8074-e32e28cc22c1" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PaymentService.PaymentService_tempuri_org.AddMoneyResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="dabf52cf-98b3-417c-9a10-33b57f7e7dc7" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPaymentService_BuyPhotocopies_InputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPaymentService_BuyPhotocopies_InputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="94a6679c-dcf2-4525-b6b0-3aa2559f039d" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PaymentService.PaymentService_tempuri_org.BuyPhotocopies" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="MultipartMessageType" OID="c7dd51a8-ba88-49e0-a489-9599e8729873" ParentLink="Module_MessageType">
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:message name=&quot;IPaymentService_BuyPhotocopies_OutputMessage&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="IPaymentService_BuyPhotocopies_OutputMessage" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="PartDeclaration" OID="53368b3c-ef9e-459c-94fb-0fe64121a136" ParentLink="MultipartMessageType_PartDeclaration">
+                <om:Property Name="ClassName" Value="PaymentService.PaymentService_tempuri_org.BuyPhotocopiesResponse" />
+                <om:Property Name="IsBodyPart" Value="True" />
+                <om:Property Name="ReportToAnalyst" Value="True" />
+                <om:Property Name="AnalystComments" Value="&lt;wsdl:part name=&quot;parameters&quot;/&gt;&#xD;&#xA;" />
+                <om:Property Name="Name" Value="parameters" />
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+        <om:Element Type="ServiceDeclaration" OID="60ef3ae8-17b2-4240-bca9-145493d16cb0" ParentLink="Module_ServiceDeclaration">
+            <om:Property Name="InitializedTransactionType" Value="False" />
+            <om:Property Name="IsInvokable" Value="True" />
+            <om:Property Name="TypeModifier" Value="Internal" />
+            <om:Property Name="ReportToAnalyst" Value="True" />
+            <om:Property Name="AnalystComments" Value="&lt;wsdl:service name=&quot;PaymentService&quot;/&gt;&#xD;&#xA;" />
+            <om:Property Name="Name" Value="PaymentServiceClient" />
+            <om:Property Name="Signal" Value="False" />
+            <om:Element Type="ServiceBody" OID="72e9860d-d8de-4dec-b74f-a825d25b7e36" ParentLink="ServiceDeclaration_ServiceBody">
+                <om:Property Name="Signal" Value="False" />
+            </om:Element>
+        </om:Element>
+    </om:Element>
+</om:MetaModel>
+#endif // __DESIGNER_DATA
+[Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+module PaymentService
+{
+    internal messagetype IPaymentService_AddMoney_InputMessage
+    {
+        body PaymentService_tempuri_org.AddMoney parameters;
+    };
+    internal messagetype IPaymentService_AddMoney_OutputMessage
+    {
+        body PaymentService_tempuri_org.AddMoneyResponse parameters;
+    };
+    internal messagetype IPaymentService_BuyPhotocopies_InputMessage
+    {
+        body PaymentService_tempuri_org.BuyPhotocopies parameters;
+    };
+    internal messagetype IPaymentService_BuyPhotocopies_OutputMessage
+    {
+        body PaymentService_tempuri_org.BuyPhotocopiesResponse parameters;
+    };
+    internal porttype IPaymentService
+    {
+        requestresponse AddMoney
+        {
+            IPaymentService_AddMoney_InputMessage, IPaymentService_AddMoney_OutputMessage
+        };
+        requestresponse BuyPhotocopies
+        {
+            IPaymentService_BuyPhotocopies_InputMessage, IPaymentService_BuyPhotocopies_OutputMessage
+        };
+    };
+    [Microsoft.XLANGs.BaseTypes.BPELExportable(false)]
+    internal service PaymentServiceClient
+    {
+        body ()
+        {
+        }
+    }
+}
+

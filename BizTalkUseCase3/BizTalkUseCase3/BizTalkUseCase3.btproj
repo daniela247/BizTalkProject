@@ -39,6 +39,7 @@
     <AssemblyOriginatorKeyFile>UseCase3.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.BizTalk.Pipeline.Components, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="System">
       <Name>System</Name>
     </Reference>
@@ -73,20 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Schemas\PaymentSystem\AddMoneyPayment.xsd">
-      <TypeName>AddMoneyPayment</TypeName>
-      <Namespace>BizTalkUseCase3.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
-    <Schema Include="Schemas\MSSQLSystem\BuyCopiesFromPayment.xsd">
-      <TypeName>BuyCopies</TypeName>
-      <Namespace>BizTalkUseCase3.Schemas</Namespace>
-      <SubType>Task</SubType>
-    </Schema>
-  </ItemGroup>
-  <ItemGroup>
     <Schema Include="Schemas\PrintSystem\AddQuotaFromMSSQL.xsd">
       <TypeName>AddQuotaFromMSSQL</TypeName>
       <Namespace>BizTalkUseCase3.Schemas.PrintSystem</Namespace>
@@ -108,15 +95,97 @@
     </Schema>
   </ItemGroup>
   <ItemGroup>
-    <Schema Include="Schemas\PropertySchema.xsd">
-      <TypeName>PropertySchema</TypeName>
-      <Namespace>BizTalkUseCase3.PropertySchema</Namespace>
+    <Schema Include="Schemas\MSSQLSystem\BuyCopiesFromPayment.xsd">
+      <TypeName>BuyCopiesFromPayment</TypeName>
+      <Namespace>BizTalkUseCase3.Schemas.MSSQLSystem</Namespace>
       <SubType>Task</SubType>
     </Schema>
-  </ItemGroup>
-  <ItemGroup>
+    <Schema Include="PaymentService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>PaymentService</Namespace>
+      <TypeName>PaymentService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="PaymentService_tempuri_org.xsd">
+      <Namespace>PaymentService</Namespace>
+      <TypeName>PaymentService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="PrintSystemService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>PrintSystem</Namespace>
+      <TypeName>PrintSystemService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="PrintSystemService_tempuri_org.xsd">
+      <Namespace>PrintSystem</Namespace>
+      <TypeName>PrintSystemService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="MSSQLService_schemas_microsoft_com_2003_10_Serialization.xsd">
+      <Namespace>MSSQLService</Namespace>
+      <TypeName>MSSQLService_schemas_microsoft_com_2003_10_Serialization</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="MSSQLService_tempuri_org.xsd">
+      <Namespace>MSSQLService</Namespace>
+      <TypeName>MSSQLService_tempuri_org</TypeName>
+      <SubType>Task</SubType>
+    </Schema>
+    <Schema Include="Schemas\PaymentSystem\AddMoneyPayment.xsd">
+      <TypeName>AddMoneyPayment</TypeName>
+      <Namespace>BizTalkUseCase3.Schemas.PaymentSystem</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="UseCase3.snk" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="MSSQLService.BindingInfo.xml" />
+    <XLang Include="MSSQLService.odx">
+      <TypeName>MSSQLService</TypeName>
+      <Namespace>BizTalkUseCase3</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="MSSQLService_Custom.BindingInfo.xml" />
+    <Map Include="Maps\PrintSystem\PrintSystem_Print_to_SOAP.btm">
+      <TypeName>PrintSystem_Print_to_SOAP</TypeName>
+      <Namespace>BizTalkUseCase3.Maps.PrintSystem</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Maps\PrintSystem\PrintSystem_Quota_to_SOAP.btm">
+      <TypeName>PrintSystem_Quota_to_SAP</TypeName>
+      <Namespace>BizTalkUseCase3.Maps.PrintSystem</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="PrintSystemService.BindingInfo.xml" />
+    <XLang Include="PrintSystemService.odx">
+      <TypeName>PrintSystemService</TypeName>
+      <Namespace>BizTalkUseCase3</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="PrintSystemService_Custom.BindingInfo.xml" />
+    <Map Include="Maps\PaymentSystem\Payment_Money_to_SOAP.btm">
+      <TypeName>Payment_Money_to_SOAP</TypeName>
+      <Namespace>BizTalkUseCase3.Maps.PaymentSystem</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Content Include="PaymentService.BindingInfo.xml" />
+    <XLang Include="PaymentService.odx">
+      <TypeName>PaymentService</TypeName>
+      <Namespace>BizTalkUseCase3</Namespace>
+      <SubType>Task</SubType>
+    </XLang>
+    <Content Include="PaymentService_Custom.BindingInfo.xml" />
+    <Map Include="Maps\MSSQLSystem\MSSQL_POS_to_SOAP.btm">
+      <TypeName>MSSQL_POS_to_SOAP</TypeName>
+      <Namespace>BizTalkUseCase3.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+    <Map Include="Maps\MSSQLSystem\MSSQL_Payment_to_SOAP.btm">
+      <TypeName>MSSQL_Payment_to_SOAP</TypeName>
+      <Namespace>BizTalkUseCase3.Maps</Namespace>
+      <SubType>Task</SubType>
+    </Map>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\BizTalk\BizTalkC.targets" />
 </Project>

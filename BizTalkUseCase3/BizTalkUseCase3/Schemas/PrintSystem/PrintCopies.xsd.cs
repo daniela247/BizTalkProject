@@ -20,7 +20,7 @@ namespace BizTalkUseCase3.Schemas.PrintSystem {
   <xs:element name=""PrintCopies"">
     <xs:complexType>
       <xs:sequence>
-        <xs:element name=""UID"" type=""xs:unsignedInt"" />
+        <xs:element name=""Username"" type=""xs:string"" />
         <xs:element name=""Copy"" type=""xs:positiveInteger"" />
       </xs:sequence>
     </xs:complexType>
