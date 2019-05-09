@@ -135,22 +135,37 @@
       <Namespace>BizTalkUseCase3.Schemas.PaymentSystem</Namespace>
       <SubType>Task</SubType>
     </Schema>
+    <Schema Include="Schemas\REST\AddMoneyPayment_Json.xsd">
+      <TypeName>AddMoneyPayment_Json</TypeName>
+      <Namespace>BizTalkUseCase3.Schemas.REST</Namespace>
+      <SubType>Task</SubType>
+    </Schema>
     <None Include="UseCase3.snk" />
   </ItemGroup>
   <ItemGroup>
+    <Map Include="Maps\REST\PaymentSystem\Payment_Money_to_REST.btm">
+      <TypeName>Payment_Money_to_REST</TypeName>
+      <Namespace>BizTalkUseCase3.Maps.REST.PaymentSystem</Namespace>
+      <SubType>Task</SubType>
+    </Map>
     <Content Include="MSSQLService.BindingInfo.xml" />
+    <Pipeline Include="Pipelines\XML_to_JSON.btp">
+      <TypeName>XML_to_JSON</TypeName>
+      <Namespace>BizTalkUseCase3</Namespace>
+      <SubType>Task</SubType>
+    </Pipeline>
     <XLang Include="MSSQLService.odx">
       <TypeName>MSSQLService</TypeName>
       <Namespace>BizTalkUseCase3</Namespace>
       <SubType>Task</SubType>
     </XLang>
     <Content Include="MSSQLService_Custom.BindingInfo.xml" />
-    <Map Include="Maps\PrintSystem\PrintSystem_Print_to_SOAP.btm">
+    <Map Include="Maps\SOAP\PrintSystem\PrintSystem_Print_to_SOAP.btm">
       <TypeName>PrintSystem_Print_to_SOAP</TypeName>
       <Namespace>BizTalkUseCase3.Maps.PrintSystem</Namespace>
       <SubType>Task</SubType>
     </Map>
-    <Map Include="Maps\PrintSystem\PrintSystem_Quota_to_SOAP.btm">
+    <Map Include="Maps\SOAP\PrintSystem\PrintSystem_Quota_to_SOAP.btm">
       <TypeName>PrintSystem_Quota_to_SAP</TypeName>
       <Namespace>BizTalkUseCase3.Maps.PrintSystem</Namespace>
       <SubType>Task</SubType>
@@ -162,7 +177,7 @@
       <SubType>Task</SubType>
     </XLang>
     <Content Include="PrintSystemService_Custom.BindingInfo.xml" />
-    <Map Include="Maps\PaymentSystem\Payment_Money_to_SOAP.btm">
+    <Map Include="Maps\SOAP\PaymentSystem\Payment_Money_to_SOAP.btm">
       <TypeName>Payment_Money_to_SOAP</TypeName>
       <Namespace>BizTalkUseCase3.Maps.PaymentSystem</Namespace>
       <SubType>Task</SubType>
@@ -174,12 +189,12 @@
       <SubType>Task</SubType>
     </XLang>
     <Content Include="PaymentService_Custom.BindingInfo.xml" />
-    <Map Include="Maps\MSSQLSystem\MSSQL_POS_to_SOAP.btm">
+    <Map Include="Maps\SOAP\MSSQLSystem\MSSQL_POS_to_SOAP.btm">
       <TypeName>MSSQL_POS_to_SOAP</TypeName>
       <Namespace>BizTalkUseCase3.Maps</Namespace>
       <SubType>Task</SubType>
     </Map>
-    <Map Include="Maps\MSSQLSystem\MSSQL_Payment_to_SOAP.btm">
+    <Map Include="Maps\SOAP\MSSQLSystem\MSSQL_Payment_to_SOAP.btm">
       <TypeName>MSSQL_Payment_to_SOAP</TypeName>
       <Namespace>BizTalkUseCase3.Maps</Namespace>
       <SubType>Task</SubType>

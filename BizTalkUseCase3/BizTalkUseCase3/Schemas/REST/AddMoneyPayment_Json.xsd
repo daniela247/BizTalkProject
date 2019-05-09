@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://BizTalkUseCase3.Schemas.REST.AddMoneyPayment_Json" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="AddMoneyPayment">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="card" type="xs:string" />
+        <xs:element minOccurs="0" name="chf" type="xs:decimal" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
